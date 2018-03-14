@@ -18,23 +18,32 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        window.setTimeout(function () {
-            window.location.href = 'login_register.html';
-        }, 5000);
+    onDeviceReady: function () {
+        // window.setTimeout(function () {
+        //     window.location.href = 'login_register.html';
+        // }, 5000);
+        $('#btnLogin').click(function () {
+            // $('a#lnkHome').trigger('click');
+            // $('#lnkHome').trigger("click");
+            window.setTimeout(function () {
+                window.location.href = 'home.html';
+            }, 2000);
+            // window.location.href = '/home.html';
+            // $('#lnkHome')[0].click();
+        });
     }
 };

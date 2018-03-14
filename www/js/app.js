@@ -57,13 +57,13 @@ var settingsView = app.views.create('#view-settings', {
 
 
 // Login Screen Demo
-$$('#my-login-screen .login-button').on('click', function () {
-  var username = $$('#my-login-screen [name="username"]').val();
-  var password = $$('#my-login-screen [name="password"]').val();
+// $$('#my-login-screen .login-button').on('click', function () {
+//   var username = $$('#my-login-screen [name="username"]').val();
+//   var password = $$('#my-login-screen [name="password"]').val();
 
-  // Close login screen
-  app.loginScreen.close('#my-login-screen');
+//   // Close login screen
+//   app.loginScreen.close('#my-login-screen');
 
-  // Alert username and password
-  app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
-});
+//   // Alert username and password
+//   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
+// });

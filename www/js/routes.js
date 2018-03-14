@@ -4,12 +4,23 @@ routes = [
     url: './index.html',
   },
   {
-    path: '/about/',
-    url: './pages/about.html',
+    name: 'home',
+    path: '/home/',
+    url: './home.html',
+    options: {
+      animate: true,
+    },
   },
   {
     path: '/catalog/',
     componentUrl: './pages/catalog.html',
+  },
+  {
+    path: '/about/',
+    url: './pages/about.html',
+    options: {
+      animate: true,
+    },
   },
   {
     path: '/product/:id/',
