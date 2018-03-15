@@ -33,8 +33,8 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        window.setTimeout(function () {
-            window.location.href = 'login_register.html';
-        }, 5000);
+        // window.setTimeout(function () {
+        //     window.location.href = 'login_register.html';
+        // }, 5000);
     }
 };
